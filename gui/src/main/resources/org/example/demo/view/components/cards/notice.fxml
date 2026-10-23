@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="notice" alignment="CENTER" style="-fx-background-radius: 10px; -fx-border-color: rgba(0,0,0,0.12); -fx-border-width: 0 0 1 0;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="0.0" prefWidth="1.0">
+                     <children>
+                        <Circle fx:id="isRead" fill="#3232c6" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </HBox>
+                  <Label text="Notification" textFill="#49454f">
+                     <font>
+                        <Font name="Cantarell Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Assigned bug" textFill="#5e5c63">
+                     <font>
+                        <Font name="Cantarell Regular" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="·" textFill="#49454fcc">
+                     <font>
+                        <Font name="Cantarell Regular" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="date" text="2 weeks ago" textFill="#5e5c63">
+                     <font>
+                        <Font name="Cantarell Regular" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox />
+         </children>
+      </VBox>
+      <Pane HBox.hgrow="ALWAYS" />
+      <HBox alignment="CENTER" prefHeight="84.0" prefWidth="120.0" />
+   </children>
+</HBox>
